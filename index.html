@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <title>To-Watch App</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+
+    <body>
+        <header class="header_area">
+            <div class="main_menu" id="mainNav">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+      					<div class="container">
+      						<!--Navigation Mobile display -->
+      						<a class="navbar-brand logo_h" href="index.html">FUNI<span>XTER</span></a>
+      						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      							<span class="icon-bar"></span>
+      							<span class="icon-bar"></span>
+      							<span class="icon-bar"></span>
+      						</button>
+      						<!--Navigation-->
+      						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+      							<ul class="nav navbar-nav menu_nav ml-auto">
+      								<li class="nav-item"><a class="nav-link" href="#nowshowing">NOW SHOWING</a>
+      								<li class="nav-item"><a class="nav-link" href="#watched">WATCHED</a>
+      								<li class="nav-item"><a class="nav-link" href="#missed">MISSED</a>
+      							</ul>
+      						</div>
+      					</div>
+            	</nav>
+            </div>
+        </header>
+
+        <!-- Banner -->
+        <section class="home_banner_area" id="home">
+            <div class="banner_inner">
+				<div class="container">
+					<div class="row banner_content">
+						<div class="col-lg-9">
+							<h2>Web App<br />To-Watch List</h2>
+							<p>An assignment of Funix University.</p>
+							<a class="banner_btn" href="#add">Start Now</a>
+						</div>
+            <div class="col-lg-3">
+							<div class="banner_map_img">
+								<img class="img-fluid" src="img/right-mobile.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--Add Task -->
+        <section id="add" class="interior_area interior_two">
+        	<div class="container">
+        		<div class="interior_inner row">
+        			<div class="col-lg-5 offset-lg-1">
+        				<div class="interior_text">
+                  <div class="comment-form task-list">
+                      <h4>Movie</h4>
+                      <form id="todo-form">
+                          <div class="form-group">
+                              <input type="text" class="form-control" id="title" placeholder="Title" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Title'">
+                          </div>
+                          <div class="form-group form-inline">
+                            <div class="form-group col-lg-6 col-md-6 name">
+                              <input type="text" class="form-control" id="theater" placeholder="Theater" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Theather'">
+                            </div>
+                            <div class="form-group col-lg-6 col-md-6 email">
+                              <input type="text" class="form-control" id="datepicker" placeholder="Date (dd/mm/yyyy)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Date (dd/mm/yyyy)'">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                              <textarea class="form-control mb-10" rows="5" name="info" placeholder="Movie Info" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Movie Info'" required=""></textarea>
+                          </div>
+                          <div class="form-group form-inline">
+                            <div class="form-group col-lg-6 col-md-6 name">
+                              <input type="number" class="form-control" id="price" placeholder="Price($)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Price($)'">
+                            </div>
+                          </div>
+                          <input type="button" value="Add" class="main_btn" onclick="todo.add();"/>
+                          <input type="button" value="ClearAll" class="main_btn" onclick="todo.clear();"/>
+                      </form>
+                  </div>
+        				</div>
+        			</div>
+        			<div class="col-lg-6">
+        				<img class="img-fluid" src="img/interior-2.png" alt="">
+                <div id="delete-div" class="generic-blockquote">
+                  Drag here to delete Task
+                </div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+
+
+        <!--================Latest News Area =================-->
+        <section class="latest_news_area">
+          <div class="container">
+            <div class="latest_news_inner row">
+              <div class="col-lg-4 task-list task-container l_news_item" id="nowshowing">
+                  <p class="date">NOW SHOWING</p>
+              </div>
+              <div class="col-lg-4 task-list task-container l_news_item" id="watched">
+                  <p class="date">WATCHED</p>
+              </div>
+              <div class="col-lg-4 task-list task-container l_news_item" id="missed">
+                  <p class="date">MISSED</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--================End Latest News Area =================-->
+        <!--================ start footer Area  =================-->
+        <footer class="footer-area">
+          Modify from Colorlib's Template - This is not for bussiness.</br>Nguyen, Minh Hung - FX00878 
+        </footer>
+		<!--================ End footer Area  =================-->
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/theme.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.ui.min.js"></script>
+        <script src="js/todo.js"></script>
+        <script type="text/javascript">
+                $( "#datepicker" ).datepicker();
+
+                $(".task-container").droppable();
+                $(".todo-task").draggable({ revert: "valid", revertDuration:200 });
+                todo.init();
+        </script>
+    </body>
+</html>
