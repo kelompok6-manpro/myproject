@@ -1,4 +1,4 @@
-# Tugas Manajemen Proyek ~ Web App Daftar Tontonan
+# Tugas Manajemen Proyek ~ Aplikasi Website Daftar Tontonan
 ## Kelompok 6
 ## Anggota :
 1. Nur Hamim
