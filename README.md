@@ -1,7 +1,6 @@
 # UNINDRA - Tugas Manajemen Proyek ~ 
 # Aplikasi Website Daftar Tontonan
-## Kelompok 6
-## Anggota :
+## Kelompok 6 ~ Anggota :
 | No | Nama                   | NPM          |
 | ---| ---------------------- |------------- | 
 | 1. | Anita Siti Rahmatllah  | 202043500254 |
